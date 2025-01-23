@@ -3,71 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Pakhi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #e91e63;
-            font-size: 36px;
-        }
-        p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
-        .message {
-            font-size: 24px;
-            color: #555;
-        }
-        .footer {
-            font-size: 14px;
-            color: #888;
-            margin-top: 40px;
-        }
-        button {
-            background-color: #e91e63;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        button:hover {
-            background-color: #d81b60;
-        }
-    </style>
+    <title>J.R Sabuj Sathi Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Surprise, Pakhi!</h1>
-        <p class="message">I just wanted to take a moment to say how much you mean to me.</p>
-        <p>You make my life so much brighter every day, and I can't wait to create even more memories together.</p>
-        <p class="message">I love you!💖</p>
-        <button id="messageButton">Click for a Surprise</button>
-        <div class="footer">
-            <p>From: Arup</p>
-            <p>Sent with all my heart.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>J.R Sabuj Sathi Club</h1>
         </div>
-    </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
-    <script>
-        document.getElementById('messageButton').addEventListener('click', function() {
-            alert('Pakhi, you are the most amazing person I know! Thank you for being you. 💖');
-        });
-    </script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to J.R Sabuj Sathi Club</h1>
+            <p>Making a difference in our community</p>
+            <a href="#contact" class="cta-button">Join Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>J.R Sabuj Sathi Club is dedicated to promoting environmental awareness and social welfare in our community. Our mission is to create a sustainable and green future while helping those in need.</p>
+                <p>Founded with the vision of making our world a better place, we organize various activities and programs throughout the year.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <h3>500+</h3>
+                    <p>Members</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-tree"></i>
+                    <h3>1000+</h3>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>50+</h3>
+                    <p>Events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <h2>Our Activities</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Tree Plantation</h3>
+                <p>Regular tree plantation drives to increase green cover</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Social Service</h3>
+                <p>Supporting underprivileged communities</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-recycle"></i>
+                <h3>Environmental Awareness</h3>
+                <p>Workshops and campaigns for environmental protection</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Add your images here -->
+            <div class="gallery-item">Image 1</div>
+            <div class="gallery-item">Image 2</div>
+            <div class="gallery-item">Image 3</div>
+            <div class="gallery-item">Image 4</div>
+            <div class="gallery-item">Image 5</div>
+            <div class="gallery-item">Image 6</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Your Club Address</p>
+                <p><i class="fas fa-phone"></i> Phone: +1234567890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@jrsabujsathi.org</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 J.R Sabuj Sathi Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
